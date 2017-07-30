@@ -1,0 +1,7 @@
+<h1>Corsairs index</h1>
+<% @corsair.each do |corsair| %>
+<%= corsair.first_name %>
+<%= corsair.age %>
+<% end %>
+<%= link_to "Enregistre-toi !", "/corsairs/new" , class: "btn btn-lg btn-primary" %>
+<%= link_to "connecte-toi", "/corsairs/show" , class: "btn btn-lg btn-primary" %>
